@@ -11,11 +11,11 @@ RUN  mkdir -p /home/LogFiles \
 
 RUN  pip install redis
 
-EXPOSE 2222 80
+EXPOSE 2222 8081
  
 ADD     /azure-vote /app
 
-ENV PORT 80
+ENV PORT 8081
 ENV PATH ${PATH}:/home/site/wwwroot
 
 # Supervisor will call into /opt/startup/init_container.sh
